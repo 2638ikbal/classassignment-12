@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.full-width{}
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+/* Menu Section */
+nav {
+    background-color: black;
+    color: #cebcbc;
+    text-align: center;
+    padding: 60px 0;
+
+}
+.header-menu{}
+.header-menu li{
+    display: inline-block;
+
+}
+.header-menu li a {
+    display: inline-block;
+    color: #cebcbc;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
+}
+
+.header-menu li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.header-menu li a:hover{
+    color: white;
+
+}
+
+.header-menu li{
+    position: relative;
+}
+.header-menu li ul{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 83px;
+    left: 0;
+    width: 300px;
+    border-top: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: scaley(0);
+    transform-origin: top;
+
+}
+.header-menu li .mega-menu li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    transition: 0.3s;
+}
+.header-menu li .mega-menu li a{
+    display: block;
+    border-right: none;
+}
+.header-menu li .mega-menu li:first-child a{
+    border-left: none;
+}
+
+.header-menu li .mega-menu li a{
+    border-left: none;
+}
+.header-menu li .mega-menu li:hover{
+    background-color: #5ea5fa;
+}
+
+
+.header-menu li:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+.header-menu li ul li{
+    position: relative;
+}
+
+.header-menu li ul li ul {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: -1px;
+    left: 300px;
+    width: 300px;
+    border-top: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: scaley(0);
+    transform-origin: top;
+}
+
+.header-menu li ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+
+
+
+
+
+
+/* Menu Section End */
+
+/* Slider Section */
+.slider-section {
+    background-image: url(./young-mens.jpg);
+    text-align: center;
+    padding: 269px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+}
+.slider-section h1 {
+    background: white;
+    width: 233px;
+    padding: 10px;
+    font-size: 45px;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+.slider-section h2 {
+    margin-top: 16px !important;
+    background: white;
+    width: 1200px;
+    padding: 5px;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 45px;
+}
+.slider-section p {
+    background: red;
+    width: 170px;
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 23px;
+    transition: 0.4s;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+.slider-section p:hover {
+    background: white;
+    border: 1px solid red;
+    color: black;
+}
+
+.subscribe-now {
+    width: 142px;
+    padding: 15px 10px;
+    font-size: 15px;
+    margin-left: -7px;
+    border: 2px solid red;
+    line-height: 16px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.subscribe-now:hover{
+    border: 2px solid red;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+/* Slider Section End */
+
+/* List Style Inside */
+.list-style-section {
+    padding: 60px 10px;
+    text-align: center;
+    border-top: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+    margin-top: 20px;
+}
+.list-style-section h3 {
+    font-size: 35px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+.list-style-section li {
+    list-style-position: outside;
+    font-size: 17px;
+    padding: 10px 0;
+}
+.inside {
+    border: none !important;
+    padding: 40px 0;
+    box-shadow: 0px 5px 23px -1px #f1f1f1;
+    margin-bottom: 50px;
+}
+.inside li {
+    list-style-position: inside;
+    padding: 10px 0;
+}
+/* List Style Inside End */
+
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #f2f2f2;
+    padding: 46px 0;
+    text-align: center;
+}
+.subscribe-section .email {
+    width: 700px;
+    padding: 13px 20px;
+    font-size: 17px;
+    border: 2px solid red;
+}
+
+
+.subscribe-section button {
+    width: 190px;
+    background: red;
+    padding: 11px 1px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: -7px;
+    border: 3px solid red;
+}
+
+.subscribe-section button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    border: 3px solid red;
+}
+/* Subscribe Section End */
+
+
+/* List-style-type */
+.list-style-type-section {
+    padding: 67px 10px;
+    margin-top: 35px;
+    text-align: center;
+    border: 4px dotted #f2f2f2;
+    font-family: sans-serif;
+    border-bottom: none;
+}
+.list-style-type-section h3 {
+    font-size: 35px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.list-box {
+    display: inline-block;
+    font-size: 18px;
+    width: 350px;
+    margin-right: 27px;
+    list-style-position: inside;
+    line-height: 27px;
+}
+.list-box-extra {
+    display: inline-block;
+    font-size: 18px;
+    width: 350px;
+    list-style-position: inside;
+    line-height: 27px;
+
+}
+ol.list-box-leter li {
+    list-style-type: lower-roman;
+}
+ul.list-box-squar li {
+    list-style-type: square;
+}
+ul.list-box-vinno li {
+    list-style-type: lower-greek;
+}
+
+/* List-style-type End */
+
+/* Footer Section */
+
+.footer-section{
+    background-color: black;
+    text-align: center;
+}
+
+.footer-heading p {
+    color: white;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.footer-menu-icon a {
+    background: #5ea5fa;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 15px;
+    margin-right: 20px;
+    font-size: 24px;
+    color: black;
+}
+.footer-menu-icon a:hover {
+    background: white;
+    transition: 0.3s;
+
+}
+.footer-menu-icon {
+    padding: 0 0 15px 0;
+}
+
+.ybrand {
+    margin-left: -3px;
+}
+/* Footer Section End */
